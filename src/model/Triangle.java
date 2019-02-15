@@ -22,7 +22,11 @@ public class Triangle implements DrawableElement {
         return this;
     }
 
+    /**
+     * !!Is not used by triangle!!
+     */
     @Override
+    @Deprecated
     public Triangle size(int width, int height) {
         //this.width = width;
         //this.height = height;
@@ -61,11 +65,25 @@ public class Triangle implements DrawableElement {
         return width;
     }
 
+    /**
+     * Describes the triangle using 3 points, on the x axis
+     * @param x1 first point
+     * @param x2 second point
+     * @param x3 third point
+     * @return the triangle element
+     */
     public Triangle xPoints(int x1, int x2, int x3) {
         xPoints = new int[]{x1, x2, x3};
         return this;
     }
 
+    /**
+     * Describes the triangle using 3 points, on the y axis
+     * @param y1 first point
+     * @param y2 second point
+     * @param y3 third point
+     * @return the triangle element
+     */
     public Triangle yPoints(int y1, int y2, int y3) {
         yPoints = new int[]{y1, y2, y3};
         return this;
